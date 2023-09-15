@@ -22,7 +22,7 @@ try:
     DEV = 1322549723
     OWNER = config("OWNER", "5178332815")
     FFMPEG = config("FFMPEG","ffmpeg -i '''{}''' -preset faster -c:v libx265 -vf 'drawtext=fontfile=Aclonica.ttf:fontsize=27:fontcolor=white:bordercolor=black@0.50:x=w-tw-10:y=10:box=1:boxcolor=black@0.5:boxborderw=6:text=Omnimo3' -s 854x480 -crf 28 -map 0:v -c:a aac  -b:a 35k -map 0:a -c:s copy -map 0:s? '''{}''' -y")
-    THUMB = config("THUMBNAIL", "https://telegra.ph/file/75ee20ec8d8c8bba84f0)
+    THUMB = config("THUMBNAIL", "https://telegra.ph/file/75ee20ec8d8c8bba84f0")
 except Exception as e:
     LOGS.info("Environment vars Missing")
     LOGS.info("something went wrong")
